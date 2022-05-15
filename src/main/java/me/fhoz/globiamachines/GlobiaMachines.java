@@ -103,12 +103,12 @@ public class GlobiaMachines extends JavaPlugin implements SlimefunAddon {
     public boolean onCommand(@Nonnull CommandSender sender, @Nonnull Command cmd, @Nonnull String label, String[] args) {
 
         if (args.length == 0) {
-            Utils.send(sender, "&cInvalid command");
+            Utils.send(sender, "&c无效指令");
             return true;
         }
 
         if (!(sender instanceof Player)) {
-            Utils.send(sender, "&cThere are no console commands available");
+            Utils.send(sender, "&c没有可用的控制台指令");
             return true;
         }
 
@@ -123,7 +123,7 @@ public class GlobiaMachines extends JavaPlugin implements SlimefunAddon {
                 return true;
             case "VERSION":
             case "V":
-                Utils.send(p, "&eThe current version is " + this.getPluginVersion());
+                Utils.send(p, "&e当前版本:" + this.getPluginVersion());
                 return true;
         }
 
@@ -132,7 +132,7 @@ public class GlobiaMachines extends JavaPlugin implements SlimefunAddon {
                 case "ADDINFO":
 
                     if (args.length != 3) {
-                        Utils.send(p, "&cPlease specify the key and the data");
+                        Utils.send(p, "&c请指定密钥和数据");
 
                     } else {
                         RayTraceResult rayResult = p.rayTraceBlocks(5d);
@@ -140,10 +140,10 @@ public class GlobiaMachines extends JavaPlugin implements SlimefunAddon {
                                 && BlockStorage.hasBlockInfo(rayResult.getHitBlock())) {
 
                             BlockStorage.addBlockInfo(rayResult.getHitBlock(), args[1], args[2]);
-                            Utils.send(p, "&aInfo has been added.");
+                            Utils.send(p, "&a信息已添加");
 
                         } else {
-                            Utils.send(p, "&cYou must be looking at a Slimefun block");
+                            Utils.send(p, "&c你必须看向粘液科技方块");
                         }
                     }
                     return true;
@@ -153,7 +153,7 @@ public class GlobiaMachines extends JavaPlugin implements SlimefunAddon {
             }
         }
 
-        Utils.send(p, "&cCommand not found");
+        Utils.send(p, "&c指令未发现");
 
         return false;
     }
