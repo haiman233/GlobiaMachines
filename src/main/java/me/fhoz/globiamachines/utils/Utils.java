@@ -66,11 +66,11 @@ public final class Utils {
     }
 
     public static void send(CommandSender p, String message) {
-        p.sendMessage(color("&7[&6GlobiaSlimefun&7] &r" + message));
+        p.sendMessage(color("&7[&6全球机器&7] &r" + message));
     }
 
     public static String multiBlockWarning() {
-        return "&cThis is a Multiblock machine!";
+        return "&c这是一个多块机器!";
     }
 
     // TODO: Deprecate custom model data method of detecting non interactables
