@@ -22,9 +22,9 @@ public class GlobiaItems {
 
     public static final SlimefunItemStack BUDGET_DUST_FABRICATOR = new SlimefunItemStack("BUDGET_DUST_FABRICATOR",
             Material.SMOKER,
-            "&Budget Dust Fabricator",
+            "&c预算粉尘泵",
             "",
-            "&7An all-in-one machine that grinds, pans, and washes but in a budget way",
+            "&7一台集研磨、淘金、淘洗于一体的机器",
             LoreBuilder.machine(MachineTier.GOOD, MachineType.MACHINE),
             LoreBuilder.speed(1),
             LoreBuilderDynamic.powerBuffer(BudgetDustFabricator.CAPACITY),
