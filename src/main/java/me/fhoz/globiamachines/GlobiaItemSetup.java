@@ -34,7 +34,7 @@ public final class GlobiaItemSetup {
                 new ItemStack(Material.GRINDSTONE), new ItemStack(Material.GRINDSTONE),
                 new ItemStack(Material.GRINDSTONE),
                 SlimefunItems.GOLD_PAN, new ItemStack(Material.DIAMOND), SlimefunItems.GOLD_PAN,
-                SlimefunItems.MAGNET, new ItemStack(Material.WATER_BUCKET), SlimefunItems.MAGNET
+                SlimefunItems.MAGNET, SlimefunItems.PROGRAMMABLE_ANDROID_MINER, SlimefunItems.MAGNET
         }).register(plugin);
     }
 
